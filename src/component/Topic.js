@@ -16,14 +16,16 @@ class Topic extends Component {
   getOneTopic() {
     let id = this.props.match.params.id;
     console.log(id);
-    axios.get("http://localhost:8888/api/topic/" + id).then((value) => {
-      if (value.data.status === true) {
-        this.setState({
-          dataTopic: value.data.dataTopic,
-          dataComment: value.data.dataComment,
-        });
-      }
-    });
+    axios
+      .get("https://forum-master.herokuapp.com/api/topic/" + id)
+      .then((value) => {
+        if (value.data.status === true) {
+          this.setState({
+            dataTopic: value.data.dataTopic,
+            dataComment: value.data.dataComment,
+          });
+        }
+      });
   }
   componentDidMount() {
     this.getOneTopic();

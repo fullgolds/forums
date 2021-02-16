@@ -14,7 +14,7 @@ class Info extends Component {
   getInfo() {
     let token = `Bearer ${localStorage.getItem("token")}`;
     axios
-      .get("http://localhost:8888/api/user/info", {
+      .get("https://forum-master.herokuapp.com/api/user/info", {
         headers: {
           Authorization: token,
         },

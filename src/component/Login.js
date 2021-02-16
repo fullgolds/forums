@@ -23,7 +23,7 @@ class Login extends Component {
       password: password,
     };
     axios
-      .post("http://localhost:8888/api/user/login", payload)
+      .post("https://forum-master.herokuapp.com/api/user/login", payload)
       .then((value) => {
         if (value.data.status === true) {
           localStorage.setItem("token", value.data.token);

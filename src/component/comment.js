@@ -14,7 +14,7 @@ class Comment extends Component {
     };
     let token = `Bearer ${localStorage.getItem("token")}`;
     axios
-      .post("http://localhost:8888/api/comment", data, {
+      .post("https://forum-master.herokuapp.com/api/comment", data, {
         headers: {
           Authorization: token,
         },

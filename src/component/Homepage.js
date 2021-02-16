@@ -9,7 +9,7 @@ class HomePage extends Component {
     this.getTopic = this.getTopic.bind(this);
   }
   getTopic() {
-    axios.get("http://localhost:8888/api/topic").then((value) => {
+    axios.get("https://forum-master.herokuapp.com/api/topic").then((value) => {
       if (value.data.status === true) {
         this.setState({ dataTopic: value.data.data });
       }

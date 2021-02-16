@@ -20,7 +20,7 @@ class Register extends Component {
       password: this.state.pass,
     };
     axios
-      .post("http://localhost:8888/api/user/register", data)
+      .post("https://forum-master.herokuapp.com/api/user/register", data)
       .then((value) => {
         if (value.data.status === true) {
           this.setState({ isRegister: true, message: value.data.message });

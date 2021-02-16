@@ -21,7 +21,7 @@ class DangBai extends Component {
       body: this.state.body,
     };
     axios
-      .post("http://localhost:8888/api/topic/post", data, {
+      .post("https://forum-master.herokuapp.com/api/topic/post", data, {
         headers: {
           Authorization: token,
         },
