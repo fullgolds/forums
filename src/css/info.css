@@ -1,0 +1,14 @@
+.boxInfos a {
+  text-decoration: none;
+  color: #1e5b7e;
+}
+.boxInfos {
+  max-width: 630px;
+  border: 1px solid #663019;
+  background: #ffcf9c;
+  margin-left: auto;
+  margin-right: auto;
+}
+.boxInfos span {
+  color: #1e5b7e;
+}

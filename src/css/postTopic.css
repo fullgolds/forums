@@ -1,0 +1,12 @@
+.PostTopic {
+  max-width: 632px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffcf9c;
+
+  color: #000;
+  font-size: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #663019;
+  padding-top: 10px;
+}
